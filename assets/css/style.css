@@ -1,0 +1,122 @@
+/* Root Variables for Light Mode */
+:root {
+    --bs-body-bg: #ffffff;
+    --bs-body-color: #212529;
+    --bs-navbar-bg: #212529;
+    --bs-section-bg: #f8f9fa;
+    --bs-text-muted: #6c757d;
+}
+
+/* Dark Mode */
+[data-bs-theme="dark"] {
+    --bs-body-bg: #1a1a1a;
+    --bs-body-color: #e0e0e0;
+    --bs-navbar-bg: #0d0d0d;
+    --bs-section-bg: #2d2d2d;
+    --bs-text-muted: #a0a0a0;
+}
+
+/* Body and Background */
+body {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: var(--bs-navbar-bg) !important;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #4da6ff !important;
+}
+
+.nav-link {
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #4da6ff !important;
+}
+
+/* Sections */
+section {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#check-privacy,
+#alerts,
+#mission {
+    background-color: var(--bs-section-bg);
+}
+
+#home {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero Background Image */
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+[data-bs-theme="dark"] #home {
+    background: linear-gradient(135deg, #4a5f8f 0%, #5a3d7a 100%);
+    color: white;
+}
+
+/* Theme Toggle Button */
+#themeToggle {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#themeToggle:hover {
+    transform: rotate(20deg);
+}
+
+#themeToggle i {
+    font-size: 1rem;
+}
+
+/* Text Color Adjustments */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--bs-body-color);
+}
+
+p {
+    color: var(--bs-body-color);
+}
+
+.lead {
+    color: inherit;
+}
+
+/* Smooth transitions for all elements */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Remove transition on navbar toggle for smoother UX */
+.navbar-toggler {
+    transition: none !important;
+}
