@@ -16,6 +16,18 @@
     --bs-text-muted: #a0a0a0;
 }
 
+/* Font Configuration */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+body, p, span, a, li {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+}
+
 /* Body and Background */
 body {
     background-color: var(--bs-body-bg);
