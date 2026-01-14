@@ -1,6 +1,8 @@
 
 # SafeGuard: Guardians of the Digital Realm (2026)
 
+![webpic](assets\images\website-pic.png)
+
 ![Version](img.shields.io)
 ![License](img.shields.io)
 ![Status](img.shields.io)
